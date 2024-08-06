@@ -1,8 +1,23 @@
-# React + Vite
+# Carnes El Dorian Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Carnes El Dorian](https://github.com/Arrobajean/CarnesElDorianWebApp/blob/main/path-to-your-logo.png)
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Carnes El Dorian Web App es una aplicación web diseñada para facilitar la venta de productos cárnicos de alta calidad. Esta aplicación permite a los usuarios explorar diferentes cortes de carne, añadir productos a su carrito de compras y realizar pedidos en línea de manera rápida y segura.
+
+## Características
+
+- **Explorar Productos**: Navega por una variedad de productos cárnicos.
+- **Carrito de Compras**: Añade productos al carrito y visualiza el total de la compra.
+- **Búsqueda**: Encuentra productos rápidamente utilizando la barra de búsqueda.
+- **Responsiva**: La aplicación está optimizada para dispositivos móviles y de escritorio.
+
+## Tecnologías Utilizadas
+
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **Material-UI**: Biblioteca de componentes de interfaz de usuario basada en Material Design.
+- **JavaScript**: Lenguaje de programación utilizado para la lógica de la aplicación.
+- **HTML y CSS**: Lenguajes de marcado y estilos para la estructura y diseño de la aplicación.
+
+****Proyecto en progreso****
