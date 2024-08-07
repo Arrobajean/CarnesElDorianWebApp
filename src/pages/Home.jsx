@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const Home = () => {
   return (
     <div>
-      <h1>Bienvenido a Super Carnes el Dorian</h1>
+      <h1>!!!!!!!!!!!</h1>
+      <h2>Este es nuestro HOME!</h2>
     </div>
   );
 };
