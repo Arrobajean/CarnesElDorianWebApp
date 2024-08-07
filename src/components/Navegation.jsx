@@ -1,5 +1,6 @@
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -31,8 +32,12 @@ const Search = styled("div")(({ theme, open }) => ({
   display: "flex",
   alignItems: "center",
   overflow: "hidden",
-  [theme.breakpoints.up("md")]: {
+  [theme.breakpoints.up("sm")]: {
     width: open ? "200px" : "0px",
+    opacity: open ? 1 : 0,
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: open ? "150px" : "0px",
     opacity: open ? 1 : 0,
   },
 }));
@@ -51,6 +56,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const SearchIconButton = styled(IconButton)(({ theme, open }) => ({
   transition: "transform 0.5s",
   transform: open ? "translateX(-216px)" : "translateX(0)",
+  [theme.breakpoints.down("sm")]: {
+    transform: open ? "translateX(-166px)" : "translateX(0)",
+  },
 }));
 
 export default function Navegation() {
@@ -97,17 +105,17 @@ export default function Navegation() {
           </Box>
           <Box
             sx={{
-              display: { xs: "none", md: "none", lg: "block" },
+              display: { xs: "none", sm: "none", md: "flex" },
               mr: 2,
             }}
           >
-            <Typography variant="h6" component="a" href="#" sx={{ mr: 2 }}>
+            <Typography variant="h6" component={Link} to="/about" sx={{ mr: 2 }} style={{ textDecoration: 'none', color: 'inherit' }}>
               Nosotros
             </Typography>
-            <Typography variant="h6" component="a" href="#" sx={{ mr: 2 }}>
+            <Typography variant="h6" component={Link} to="/contact" sx={{ mr: 2 }} style={{ textDecoration: 'none', color: 'inherit' }}>
               Contacto
             </Typography>
-            <Typography variant="h6" component="a" href="#">
+            <Typography variant="h6" component={Link} to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
               Tienda
             </Typography>
           </Box>
