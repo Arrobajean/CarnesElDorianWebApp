@@ -11,9 +11,11 @@ import { Link } from "react-router-dom";
 import InfoIcon from "@mui/icons-material/Info";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import StoreIcon from "@mui/icons-material/Store";
+import HomeIcon from "@mui/icons-material/Home"; // Icono home.
 
 const MobileMenuDrawer = ({ open, onClose }) => {
   const menuItems = [
+    { text: "Inicio", href: "/", icon: <HomeIcon /> }, // Agregar el enlace a Inicio
     { text: "Nosotros", href: "/about", icon: <InfoIcon /> },
     { text: "Contacto", href: "/contact", icon: <ContactMailIcon /> },
     { text: "Tienda", href: "/", icon: <StoreIcon /> },

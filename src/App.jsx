@@ -3,7 +3,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navegation from "./components/Navegation";
-import Home from "./pages/Home";
+import Home from "./pages/Home";  // Asegúrate de que Home esté importado
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
